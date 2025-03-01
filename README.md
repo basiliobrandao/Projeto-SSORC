@@ -128,7 +128,3 @@ Para acessar a pasta compartilhada a partir do Windows:
 ```
 \\IP-do-servidor\musicas
 ```
-
-Agora, a pasta compartilhada estará acessível no Windows.
-
----
