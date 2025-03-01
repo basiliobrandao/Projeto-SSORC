@@ -41,7 +41,7 @@ Dê permissão total à pasta de compartilhamento:
 sudo chmod -R 777 /srv/samba/musica
 ```
 
-Defina o dono da pasta:
+Defina o dono da pasta usando o usuário administrador e usuário comum:
 
 ```bash
 sudo chown admin:teste /srv/samba/musica
@@ -69,9 +69,10 @@ No final do arquivo, adicione a seguinte configuração:
     create mask = 0777
     directory mask = 0777
     public = yes
-    veto files = /*.mp3/
+    veto files = /*.mp4/
     veto oplock files = yes
 ```
+Se quiser bloquear outros tipos de arquivos, adicione a extensão do arquivo no formato /*.extensão
 
 Salve o arquivo e saia do editor.
 
@@ -129,14 +130,6 @@ Para acessar a pasta compartilhada a partir do Windows:
 ```
 
 Agora, a pasta compartilhada estará acessível no Windows.
-
----
-
-## 10. Considerações Finais
-
-- O compartilhamento foi configurado para ser público, ou seja, qualquer usuário pode acessá-lo.
-- Caso precise de autenticação, ajuste as permissões e defina um usuário no Samba.
-- Se houver problemas de conexão, verifique o firewall e a configuração de rede.
 
 ---
 
