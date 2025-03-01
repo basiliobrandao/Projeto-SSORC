@@ -44,7 +44,7 @@ sudo chmod -R 777 /srv/samba/musica
 Defina o dono da pasta usando o usuário administrador e usuário comum:
 
 ```bash
-sudo chown admin:teste /srv/samba/musica
+sudo chown admin:comum /srv/samba/musica
 ```
 
 ---
