@@ -132,7 +132,3 @@ Para acessar a pasta compartilhada a partir do Windows:
 Agora, a pasta compartilhada estará acessível no Windows.
 
 ---
-
-Agora seu compartilhamento de músicas via Samba está pronto para uso! 🎵
-
-
